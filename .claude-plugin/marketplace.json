@@ -38,6 +38,11 @@
       "name": "sp-global",
       "source": "./partner-built/spglobal",
       "description": "S&P Global - Financial data and analytics skills including company tearsheets, earnings previews, and transaction summaries"
+    },
+    {
+      "name": "bigdata",
+      "source": "./partner-built/bigdata",
+      "description": "Financial research analyst workflows powered by Bigdata.com — company briefs, earnings analysis, risk assessments, and macro economics research"
     }
   ]
 }

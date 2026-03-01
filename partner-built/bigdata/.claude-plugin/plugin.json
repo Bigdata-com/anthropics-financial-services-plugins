@@ -1,0 +1,18 @@
+{
+  "name": "bigdata",
+  "description": "Financial research analyst workflows powered by Bigdata.com — company briefs, earnings analysis, risk assessments, and macro economics research",
+  "version": "1.0.0",
+  "author": {
+    "name": "Bigdata.com"
+  },
+  "homepage": "https://bigdata.com",
+  "repository": "https://github.com/Bigdata-com/skills-financial-research-analyst",
+  "license": "Apache-2.0",
+  "keywords": ["bigdata", "finance", "research", "earnings", "macro", "risk-assessment", "company-brief"],
+  "mcpServers": {
+    "bigdata": {
+      "type": "http",
+      "url": "https://mcp.bigdata.com/"
+    }
+  }
+}
