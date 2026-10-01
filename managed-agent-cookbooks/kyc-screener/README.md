@@ -8,7 +8,7 @@ Parses onboarding docs, runs the rules engine, screens sanctions/PEP, flags gaps
 
 ```bash
 export ANTHROPIC_API_KEY=sk-ant-...
-export SCREENING_MCP_URL=...
+export SCREENING_MCP_URL=... BIGDATA_MCP_URL=...
 ../../scripts/deploy-managed-agent.sh kyc-screener
 ```
 
@@ -23,7 +23,7 @@ Onboarding documents are untrusted. Three-tier isolation:
 | Tier | Touches untrusted docs? | Tools | Connectors |
 |---|---|---|---|
 | **`doc-reader`** | **Yes** | `Read`, `Grep` only | None |
-| `rules-engine` / Orchestrator | No | `Read`, `Grep`, `Glob`, `Agent` | screening (read-only) |
+| `rules-engine` / Orchestrator | No | `Read`, `Grep`, `Glob`, `Agent` | screening, Bigdata (read-only) |
 | **`escalator`** (Write-holder) | No | `Read`, `Write`, `Edit` | None |
 
 `doc-reader` returns length-capped, schema-validated JSON. `escalator` produces `./out/escalation-<packet>.xlsx`.

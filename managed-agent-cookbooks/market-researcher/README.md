@@ -8,7 +8,7 @@ Sector or theme → industry overview → competitive landscape → peer comps �
 
 ```bash
 export ANTHROPIC_API_KEY=sk-ant-...
-export CAPIQ_MCP_URL=... FACTSET_MCP_URL=...
+export CAPIQ_MCP_URL=... FACTSET_MCP_URL=... BIGDATA_MCP_URL=...
 ../../scripts/deploy-managed-agent.sh market-researcher
 ```
 
@@ -23,7 +23,7 @@ Third-party reports and issuer materials are untrusted. Three-tier isolation:
 | Tier | Touches untrusted docs? | Tools | Connectors |
 |---|---|---|---|
 | **`sector-reader`** | **Yes** | `Read`, `Grep` only | None |
-| `comps-spreader` / Orchestrator | No | `Read`, `Grep`, `Glob`, `Agent` | CapIQ, FactSet (read-only) |
+| `comps-spreader` / Orchestrator | No | `Read`, `Grep`, `Glob`, `Agent` | CapIQ, FactSet, Bigdata (read-only) |
 | **`note-writer`** (Write-holder) | No | `Read`, `Write`, `Edit` | None |
 
 `sector-reader` returns length-capped, schema-validated JSON. `note-writer` produces `./out/primer-<sector>.docx` (and `.pptx` if slides requested).
