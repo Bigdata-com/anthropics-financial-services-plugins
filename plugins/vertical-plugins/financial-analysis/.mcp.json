@@ -28,6 +28,10 @@
       "type": "http",
       "url": "https://mcp-pub.aiera.com"
     },
+    "bigdata": {
+      "type": "http",
+      "url": "https://mcp.bigdata.com"
+    },
     "lseg": {
       "type": "http",
       "url": "https://api.analytics.lseg.com/lfa/mcp"
@@ -43,9 +47,10 @@
     "egnyte": {
       "type": "http",
       "url": "https://mcp-server.egnyte.com/mcp"
-    }
+    },
     "box": {
       "type": "http",
       "url": "https://mcp.box.com"
+    }
   }
 }

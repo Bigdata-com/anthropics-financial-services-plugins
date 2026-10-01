@@ -15,9 +15,11 @@ tools:
       - { name: grep,  enabled: true }
       - { name: glob,  enabled: true }
   - { type: mcp_toolset, mcp_server_name: screening, default_config: { enabled: true } }
+  - { type: mcp_toolset, mcp_server_name: bigdata, default_config: { enabled: true } }
 
 mcp_servers:
   - { type: url, name: screening, url: "${SCREENING_MCP_URL}" }
+  - { type: url, name: bigdata, url: "${BIGDATA_MCP_URL}" }
 
 skills:
   - { from_plugin: ../../plugins/agent-plugins/kyc-screener }
