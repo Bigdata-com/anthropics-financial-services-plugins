@@ -5,6 +5,12 @@ description: Create comprehensive industry and sector landscape reports covering
 
 # Sector Overview
 
+## Data Sources
+
+**Check for MCP data sources first.** If the Bigdata MCP is available, use it as the primary source for the unstructured and structured content a sector overview needs: news, filings, and transcripts for secular trends, regulatory developments, M&A activity, and management commentary; company financials and valuation multiples for the key players; screening to build or sanity-check the universe of public companies; and upcoming events to feed the catalysts section. Read the MCP's tool descriptions and instructions to pick the right tool for each task.
+
+Fall back to Bloomberg, SEC EDGAR filings, or other institutional sources only if the MCP is unavailable. Do not use web search as a primary source for market sizing or company financials.
+
 ## Workflow
 
 ### Step 1: Define Scope
@@ -29,7 +35,7 @@ description: Create comprehensive industry and sector landscape reports covering
 - Business model types (subscription, transaction, licensing, services)
 - Barriers to entry (capital, regulatory, technical, network effects)
 
-**Key Trends & Drivers**
+**Key Trends & Drivers** (pull from Bigdata MCP news, filings, and transcripts if available)
 - Secular tailwinds (3-5 major trends)
 - Headwinds and risks
 - Technology disruption vectors
@@ -38,7 +44,7 @@ description: Create comprehensive industry and sector landscape reports covering
 
 ### Step 3: Competitive Landscape
 
-**Company Profiles** (for top 5-10 players):
+**Company Profiles** (for top 5-10 players; populate financials and multiples from Bigdata MCP company data if available):
 
 | Company | Revenue | Growth | EBITDA Margin | Market Share | Key Differentiator |
 |---------|---------|--------|--------------|-------------|-------------------|
@@ -81,7 +87,7 @@ For each company, brief profile:
 
 ## Important Notes
 
-- Source all market size data — cite the research firm or methodology
+- Source all market size data — cite the research firm or methodology; cite Bigdata.com documents by source and date
 - Distinguish between TAM hype and realistic addressable market
 - Sector overviews age fast — note the date and flag data that may be stale
 - Charts are essential — market size waterfall, competitive positioning matrix, valuation scatter plot
